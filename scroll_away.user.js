@@ -12,7 +12,7 @@
 document.onreadystatechange = function scroll_away() {
   'use strict'
   if (document.readyState === 'complete') {
-    // get all body elements that contain css rule position: fixed
+    // get an Array of all body elements that contain css rule position: fixed
     var fixed_elements = Array.prototype.filter.call(document.querySelectorAll('body *'), function (e) {
       return window.getComputedStyle(e).getPropertyValue('position') === 'fixed'
     })
